@@ -14,6 +14,7 @@
 # Runtime exports created by users
 /exports/
 /presets/
+/scripts/
 /tools/
 /exports/sounds/*
 !/exports/sounds/.gitkeep
