@@ -1,0 +1,28 @@
+{
+  "name": "Ocean Hat Splash",
+  "description": "Open hat splashes for tide groove.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Hat",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 46,
+          "start": 1,
+          "duration": 0.25,
+          "velocity": 0.42
+        },
+        {
+          "pitch": 42,
+          "start": 3,
+          "duration": 0.125,
+          "velocity": 0.32
+        }
+      ]
+    }
+  ]
+}

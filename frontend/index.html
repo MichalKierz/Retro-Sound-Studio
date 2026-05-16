@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Sound Studio</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <div>
+                <h1>Retro Sound Studio</h1>
+            </div>
+        </header>
+
+        <nav class="tabs" aria-label="Main sections">
+            <button class="tab-btn active" data-target="sound-creation">Sound Creation</button>
+            <button class="tab-btn" data-target="sound-export">Sound Export</button>
+            <button class="tab-btn" data-target="melody-creation">Melody Creation</button>
+            <button class="tab-btn" data-target="melody-export">Melody Export</button>
+        </nav>
+
+        <main class="content">
+            <section id="sound-creation" class="tab-content active">
+                <div class="section-head">
+                    <div class="preset-tools">
+                        <label for="sound-preset">Preset</label>
+                        <select id="sound-preset"></select>
+                        <button id="btn-load-sound-preset" class="primary-btn">Load</button>
+                        <button id="btn-import-sound-preset" class="secondary-btn">Import</button>
+                        <button id="btn-save-sound-preset" class="secondary-btn">Save Preset</button>
+                    </div>
+                </div>
+                <div class="work-grid">
+                    <div class="synth-panel-grid">
+                        <section class="panel">
+                            <h3>Oscillators</h3>
+                            <label>Main Waveform</label>
+                            <select id="waveform">
+                                <option value="square">Square</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Sawtooth</option>
+                                <option value="sine">Sine</option>
+                                <option value="noise">Noise</option>
+                                <option value="wavetable">Wavetable</option>
+                            </select>
+                            <label>Duty Mode</label>
+                            <select id="duty_mode">
+                                <option value="free">Free</option>
+                                <option value="12_5">12.5%</option>
+                                <option value="25">25%</option>
+                                <option value="50">50%</option>
+                                <option value="75">75%</option>
+                            </select>
+                            <label>Pulse Width <span id="pulse_width-val">0.35</span></label>
+                            <input type="range" id="pulse_width" min="0.1" max="0.9" step="0.01" value="0.35">
+                            <label>Duty Sequence</label>
+                            <select id="duty_sequence">
+                                <option value="none">None</option>
+                                <option value="classic_steps">Classic Steps</option>
+                                <option value="pulse_train">Pulse Train</option>
+                                <option value="skewed_ladder">Skewed Ladder</option>
+                            </select>
+                            <label>Duty Seq Speed <span id="duty_sequence_rate-val">0.00 Hz</span></label>
+                            <input type="range" id="duty_sequence_rate" min="0" max="30" step="0.5" value="0">
+                            <label>Sub Osc Waveform</label>
+                            <select id="sub_waveform">
+                                <option value="none">None</option>
+                                <option value="square">Square</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Sawtooth</option>
+                                <option value="sine">Sine</option>
+                            </select>
+                            <label>Sub Osc Level <span id="sub_level-val">0.00</span></label>
+                            <input type="range" id="sub_level" min="0" max="1" step="0.01" value="0">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Noise/Wavetable</h3>
+                            <label>Noise Color</label>
+                            <select id="noise_color">
+                                <option value="white">White</option>
+                                <option value="pink">Pink</option>
+                                <option value="brown">Brown</option>
+                            </select>
+                            <label>Noise Mode</label>
+                            <select id="noise_mode">
+                                <option value="lfsr">LFSR</option>
+                                <option value="periodic">Periodic</option>
+                                <option value="metallic">Metallic</option>
+                            </select>
+                            <label>Noise Period <span id="noise_period-val">1x</span></label>
+                            <input type="range" id="noise_period" min="1" max="128" step="1" value="1">
+                            <label>Wavetable</label>
+                            <select id="wavetable">
+                                <option value="none">None</option>
+                                <option value="gb_organ">GB Organ</option>
+                                <option value="gb_bell">GB Bell</option>
+                                <option value="gb_saw">GB Saw</option>
+                                <option value="gb_pulse">GB Pulse</option>
+                            </select>
+                        </section>
+
+                        <section class="panel">
+                            <h3>Pitch</h3>
+                            <label>Frequency <span id="frequency-val">440 Hz</span></label>
+                            <input type="range" id="frequency" min="20" max="2000" step="1" value="440">
+                            <label>Sweep Time <span id="sweep_time-val">0.00 s</span></label>
+                            <input type="range" id="sweep_time" min="0" max="2" step="0.01" value="0">
+                            <label>Sweep Amount <span id="sweep_amount-val">0 st</span></label>
+                            <input type="range" id="sweep_amount" min="-48" max="48" step="1" value="0">
+                            <label>Pitch Env Decay <span id="pitch_env_decay-val">0.00 s</span></label>
+                            <input type="range" id="pitch_env_decay" min="0" max="2" step="0.01" value="0">
+                            <label>Pitch Env Amount <span id="pitch_env_amount-val">0 st</span></label>
+                            <input type="range" id="pitch_env_amount" min="-48" max="48" step="1" value="0">
+                            <label>Pitch Env Curve</label>
+                            <select id="pitch_env_curve">
+                                <option value="exponential">Exponential</option>
+                                <option value="linear">Linear</option>
+                            </select>
+                            <label>Portamento <span id="portamento-val">0.00 s</span></label>
+                            <input type="range" id="portamento" min="0" max="1" step="0.01" value="0">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Filter</h3>
+                            <label>Type</label>
+                            <select id="filter_type">
+                                <option value="none">None</option>
+                                <option value="lowpass">Low-Pass</option>
+                                <option value="highpass">High-Pass</option>
+                                <option value="bandpass">Band-Pass</option>
+                            </select>
+                            <label>Cutoff <span id="filter_cutoff-val">20000 Hz</span></label>
+                            <input type="range" id="filter_cutoff" min="20" max="20000" step="10" value="20000">
+                            <label>Resonance <span id="filter_resonance-val">0.00</span></label>
+                            <input type="range" id="filter_resonance" min="0" max="0.99" step="0.01" value="0">
+                            <label>Envelope Depth <span id="filter_env_depth-val">0.00</span></label>
+                            <input type="range" id="filter_env_depth" min="-1" max="1" step="0.01" value="0">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Amp Envelope</h3>
+                            <label>Attack <span id="attack-val">0.05 s</span></label>
+                            <input type="range" id="attack" min="0" max="2" step="0.01" value="0.05">
+                            <label>Decay <span id="decay-val">0.10 s</span></label>
+                            <input type="range" id="decay" min="0" max="2" step="0.01" value="0.1">
+                            <label>Sustain <span id="sustain-val">0.50</span></label>
+                            <input type="range" id="sustain" min="0" max="1" step="0.01" value="0.5">
+                            <label>Release <span id="release-val">0.20 s</span></label>
+                            <input type="range" id="release" min="0" max="2" step="0.01" value="0.2">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Filter Envelope</h3>
+                            <label>Attack <span id="filter_attack-val">0.05 s</span></label>
+                            <input type="range" id="filter_attack" min="0" max="2" step="0.01" value="0.05">
+                            <label>Decay <span id="filter_decay-val">0.10 s</span></label>
+                            <input type="range" id="filter_decay" min="0" max="2" step="0.01" value="0.1">
+                            <label>Sustain <span id="filter_sustain-val">0.50</span></label>
+                            <input type="range" id="filter_sustain" min="0" max="1" step="0.01" value="0.5">
+                            <label>Release <span id="filter_release-val">0.20 s</span></label>
+                            <input type="range" id="filter_release" min="0" max="2" step="0.01" value="0.2">
+                        </section>
+
+                        <section class="panel">
+                            <h3>LFO 1</h3>
+                            <label>Routing</label>
+                            <select id="lfo1_routing">
+                                <option value="none">None</option>
+                                <option value="pitch">Pitch</option>
+                                <option value="cutoff">Filter Cutoff</option>
+                                <option value="pwm">Pulse Width</option>
+                                <option value="amp">Amplitude</option>
+                            </select>
+                            <label>Waveform</label>
+                            <select id="lfo1_waveform">
+                                <option value="sine">Sine</option>
+                                <option value="square">Square</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Sawtooth</option>
+                            </select>
+                            <label>Speed <span id="lfo1_speed-val">5.00 Hz</span></label>
+                            <input type="range" id="lfo1_speed" min="0" max="50" step="0.1" value="5">
+                            <label>Depth <span id="lfo1_depth-val">0.00</span></label>
+                            <input type="range" id="lfo1_depth" min="0" max="12" step="0.1" value="0">
+                        </section>
+
+                        <section class="panel">
+                            <h3>LFO 2</h3>
+                            <label>Routing</label>
+                            <select id="lfo2_routing">
+                                <option value="none">None</option>
+                                <option value="pitch">Pitch</option>
+                                <option value="cutoff">Filter Cutoff</option>
+                                <option value="pwm">Pulse Width</option>
+                                <option value="amp">Amplitude</option>
+                            </select>
+                            <label>Waveform</label>
+                            <select id="lfo2_waveform">
+                                <option value="sine">Sine</option>
+                                <option value="square">Square</option>
+                                <option value="triangle">Triangle</option>
+                                <option value="sawtooth">Sawtooth</option>
+                            </select>
+                            <label>Speed <span id="lfo2_speed-val">1.00 Hz</span></label>
+                            <input type="range" id="lfo2_speed" min="0" max="50" step="0.1" value="1">
+                            <label>Depth <span id="lfo2_depth-val">0.00</span></label>
+                            <input type="range" id="lfo2_depth" min="0" max="12" step="0.1" value="0">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Lo-Fi</h3>
+                            <label>Delay Mix <span id="delay_mix-val">0.00</span></label>
+                            <input type="range" id="delay_mix" min="0" max="1" step="0.01" value="0">
+                            <label>Delay Time <span id="delay_time-val">0.00 s</span></label>
+                            <input type="range" id="delay_time" min="0" max="1.5" step="0.01" value="0">
+                            <label>Delay Feedback <span id="delay_feedback-val">0.00</span></label>
+                            <input type="range" id="delay_feedback" min="0" max="0.9" step="0.01" value="0">
+                            <label>Bit Depth <span id="bit_depth-val">16 bit</span></label>
+                            <input type="range" id="bit_depth" min="1" max="16" step="1" value="16">
+                            <label>Sample Rate Reduction <span id="sample_rate_reduction-val">1x</span></label>
+                            <input type="range" id="sample_rate_reduction" min="1" max="32" step="1" value="1">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Distortion</h3>
+                            <label>Distortion</label>
+                            <select id="distortion_type">
+                                <option value="none">None</option>
+                                <option value="hard_clip">Hard Clip</option>
+                                <option value="soft_clip">Soft Clip</option>
+                                <option value="foldback">Foldback</option>
+                            </select>
+                            <label>Distortion Drive <span id="distortion_drive-val">1.00x</span></label>
+                            <input type="range" id="distortion_drive" min="0.1" max="12" step="0.1" value="1">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Sequencing</h3>
+                            <label>Arp Speed <span id="arp_speed-val">0.00 Hz</span></label>
+                            <input type="range" id="arp_speed" min="0" max="30" step="0.5" value="0">
+                            <label>Arp Chord</label>
+                            <select id="arp_chord">
+                                <option value="none">None</option>
+                                <option value="major">Major</option>
+                                <option value="minor">Minor</option>
+                                <option value="octave">Octave</option>
+                                <option value="fifth">Fifth</option>
+                            </select>
+                            <label>Retrigger Rate <span id="retrigger_rate-val">0.00 Hz</span></label>
+                            <input type="range" id="retrigger_rate" min="0" max="40" step="0.5" value="0">
+                            <label>Gate Length <span id="gate_length-val">1.00</span></label>
+                            <input type="range" id="gate_length" min="0.02" max="1" step="0.01" value="1">
+                        </section>
+
+                        <section class="panel">
+                            <h3>Stereo</h3>
+                            <label>Pan <span id="pan-val">0.00</span></label>
+                            <input type="range" id="pan" min="-1" max="1" step="0.01" value="0">
+                            <label>Auto Pan Speed <span id="auto_pan_speed-val">0.00 Hz</span></label>
+                            <input type="range" id="auto_pan_speed" min="0" max="20" step="0.1" value="0">
+                            <label>Auto Pan Depth <span id="auto_pan_depth-val">0.00</span></label>
+                            <input type="range" id="auto_pan_depth" min="0" max="1" step="0.01" value="0">
+                        </section>
+                    </div>
+
+                    <aside class="visual-column">
+                        <section class="panel visual-panel">
+                            <h3>Oscillator</h3>
+                            <canvas id="waveform-canvas" width="720" height="220"></canvas>
+                        </section>
+                        <section class="panel visual-panel">
+                            <h3>Envelopes</h3>
+                            <canvas id="envelope-canvas" width="720" height="220"></canvas>
+                        </section>
+                        <section class="panel visual-panel">
+                            <h3>Live Waveform</h3>
+                            <canvas id="live-waveform-canvas" width="1600" height="320"></canvas>
+                        </section>
+                    </aside>
+                </div>
+
+                <div class="playback-bar" data-playback="sound">
+                    <button data-action="play">Play</button>
+                    <button data-action="pause">Pause</button>
+                    <button data-action="restart">Restart</button>
+                    <button data-action="stop">Stop</button>
+                    <button data-action="loop" aria-pressed="false">Loop</button>
+                    <input type="range" data-role="seek" min="0" max="1000" value="0">
+                    <span data-role="time">0.00 / 0.00</span>
+                    <label>Volume <input type="range" data-role="volume" min="0" max="100" value="5"></label>
+                    <span data-role="volume-readout">5% / -26.0 dB</span>
+                </div>
+            </section>
+
+            <section id="sound-export" class="tab-content">
+                <div class="export-grid">
+                    <section class="panel">
+                        <h3>Output</h3>
+                        <label>Filename</label>
+                        <input id="sound-export-name" type="text" value="retro_sound">
+                        <label>Folder</label>
+                        <div class="folder-picker">
+                            <input id="sound-export-folder" type="text" readonly>
+                            <button id="btn-sound-export-folder" class="secondary-btn">Choose</button>
+                        </div>
+                        <label>Format</label>
+                        <select id="export-format" data-export-format>
+                            <option value="wav">WAV</option>
+                            <option value="mp3">MP3</option>
+                            <option value="ogg">OGG</option>
+                            <option value="midi">MIDI</option>
+                        </select>
+                        <button id="btn-export-sound" class="primary-btn export-action">Export Current Sound</button>
+                        <div class="export-progress">
+                            <progress id="sound-export-progress" max="100" value="0"></progress>
+                            <span id="sound-export-progress-label">Idle</span>
+                        </div>
+                    </section>
+                    <section class="panel export-settings">
+                        <h3>Format Settings</h3>
+                        <div data-format-settings="wav">
+                            <label>Bit Depth</label>
+                            <select id="sound-wav-bit-depth">
+                                <option value="16">16-bit PCM</option>
+                                <option value="24">24-bit PCM</option>
+                                <option value="32f">32-bit float</option>
+                            </select>
+                            <label>Normalize Peak</label>
+                            <select id="sound-wav-normalize">
+                                <option value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </div>
+                        <div data-format-settings="mp3">
+                            <label>Bitrate</label>
+                            <select id="sound-mp3-bitrate">
+                                <option value="128">128 kbps</option>
+                                <option value="192" selected>192 kbps</option>
+                                <option value="256">256 kbps</option>
+                                <option value="320">320 kbps</option>
+                            </select>
+                            <label>Encoder Quality</label>
+                            <select id="sound-mp3-quality">
+                                <option value="0">Best</option>
+                                <option value="2" selected>Near Best</option>
+                                <option value="5">Good</option>
+                            </select>
+                        </div>
+                        <div data-format-settings="ogg">
+                            <label>Quality</label>
+                            <input type="range" id="sound-ogg-quality" min="0" max="10" step="1" value="6">
+                            <label>Target Mode</label>
+                            <select id="sound-ogg-mode">
+                                <option value="quality">Quality VBR</option>
+                                <option value="bitrate">Bitrate VBR</option>
+                            </select>
+                            <label>Bitrate Target</label>
+                            <select id="sound-ogg-bitrate">
+                                <option value="96000">96 kbps</option>
+                                <option value="128000" selected>128 kbps</option>
+                                <option value="192000">192 kbps</option>
+                            </select>
+                        </div>
+                        <div data-format-settings="midi">
+                            <label>Ticks Per Beat</label>
+                            <select id="sound-midi-ticks">
+                                <option value="240">240</option>
+                                <option value="480" selected>480</option>
+                                <option value="960">960</option>
+                            </select>
+                            <label>Note Length</label>
+                            <select id="sound-midi-note-beats">
+                                <option value="1">1 beat</option>
+                                <option value="2" selected>2 beats</option>
+                                <option value="4">4 beats</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+            </section>
+
+            <section id="melody-creation" class="tab-content">
+                <div class="section-head">
+                    <div class="preset-tools workflow-tools">
+                        <label for="melody-preset">Melody Workflow</label>
+                        <select id="melody-preset"></select>
+                        <button id="btn-load-melody-preset" class="primary-btn">Load</button>
+                        <button id="btn-import-melody-preset" class="secondary-btn">Import</button>
+                        <button id="btn-save-melody-preset" class="secondary-btn">Save Melody Workflow</button>
+                        <button id="btn-reset-melody-workflow" class="danger-btn">Reset Workflow</button>
+                    </div>
+                </div>
+
+                <div class="melody-layout">
+                    <aside class="panel layer-panel">
+                        <div class="layer-head">
+                            <h3>Layers</h3>
+                            <button id="btn-add-layer" class="secondary-btn">Add Layer</button>
+                        </div>
+                        <div id="layer-list" class="layer-list"></div>
+                        <div class="layer-action-row">
+                            <button id="btn-delete-note" class="secondary-btn">Delete Selected Note</button>
+                            <button id="btn-clear-layer" class="secondary-btn">Clear Active Layer</button>
+                        </div>
+                        <div class="layer-action-row layer-melody-actions">
+                            <button id="btn-save-selected-melody" class="secondary-btn">Save Selected Melody</button>
+                            <button id="btn-load-selected-melody" class="secondary-btn">Load Melody To Selected Layer</button>
+                        </div>
+                    </aside>
+                    <section class="panel piano-panel">
+                        <div class="piano-toolbar">
+                            <div class="mode-toggle">
+                                <button id="mode-draw" class="active" data-edit-mode="draw">Place Notes</button>
+                                <button id="mode-delete" data-edit-mode="delete">Delete Notes</button>
+                                <button id="btn-zoom-out" class="secondary-btn">Zoom -</button>
+                                <button id="btn-zoom-in" class="secondary-btn">Zoom +</button>
+                                <button id="btn-note-shorten" class="secondary-btn">Shorten Note</button>
+                                <button id="btn-note-lengthen" class="secondary-btn">Lengthen Note</button>
+                            </div>
+                        </div>
+                        <div class="piano-roll-shell">
+                            <canvas id="melody-canvas" width="2200" height="1460"></canvas>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="playback-bar" data-playback="melody">
+                    <button data-action="play">Play</button>
+                    <button data-action="pause">Pause</button>
+                    <button data-action="restart">Restart</button>
+                    <button data-action="stop">Stop</button>
+                    <button data-action="loop" aria-pressed="false">Loop</button>
+                    <input type="range" data-role="seek" min="0" max="1000" value="0">
+                    <span data-role="time">0.00 / 0.00</span>
+                    <label>Volume <input type="range" data-role="volume" min="0" max="100" value="5"></label>
+                    <span data-role="volume-readout">5% / -26.0 dB</span>
+                </div>
+            </section>
+
+            <section id="melody-export" class="tab-content">
+                <div class="export-grid">
+                    <section class="panel">
+                        <h3>Output</h3>
+                        <label>Filename</label>
+                        <input id="melody-export-name" type="text" value="retro_melody">
+                        <label>Folder</label>
+                        <div class="folder-picker">
+                            <input id="melody-export-folder" type="text" readonly>
+                            <button id="btn-melody-export-folder" class="secondary-btn">Choose</button>
+                        </div>
+                        <label>Format</label>
+                        <select id="export-melody-format" data-export-format>
+                            <option value="wav">WAV</option>
+                            <option value="mp3">MP3</option>
+                            <option value="ogg">OGG</option>
+                            <option value="midi">MIDI</option>
+                        </select>
+                        <button id="btn-export-melody" class="primary-btn export-action">Export Melody</button>
+                        <div class="export-progress">
+                            <progress id="melody-export-progress" max="100" value="0"></progress>
+                            <span id="melody-export-progress-label">Idle</span>
+                        </div>
+                    </section>
+                    <section class="panel export-settings">
+                        <h3>Format Settings</h3>
+                        <div data-format-settings="wav">
+                            <label>Bit Depth</label>
+                            <select id="melody-wav-bit-depth">
+                                <option value="16">16-bit PCM</option>
+                                <option value="24">24-bit PCM</option>
+                                <option value="32f">32-bit float</option>
+                            </select>
+                            <label>Normalize Peak</label>
+                            <select id="melody-wav-normalize">
+                                <option value="on">On</option>
+                                <option value="off">Off</option>
+                            </select>
+                        </div>
+                        <div data-format-settings="mp3">
+                            <label>Bitrate</label>
+                            <select id="melody-mp3-bitrate">
+                                <option value="128">128 kbps</option>
+                                <option value="192" selected>192 kbps</option>
+                                <option value="256">256 kbps</option>
+                                <option value="320">320 kbps</option>
+                            </select>
+                            <label>Encoder Quality</label>
+                            <select id="melody-mp3-quality">
+                                <option value="0">Best</option>
+                                <option value="2" selected>Near Best</option>
+                                <option value="5">Good</option>
+                            </select>
+                        </div>
+                        <div data-format-settings="ogg">
+                            <label>Quality</label>
+                            <input type="range" id="melody-ogg-quality" min="0" max="10" step="1" value="6">
+                            <label>Target Mode</label>
+                            <select id="melody-ogg-mode">
+                                <option value="quality">Quality VBR</option>
+                                <option value="bitrate">Bitrate VBR</option>
+                            </select>
+                            <label>Bitrate Target</label>
+                            <select id="melody-ogg-bitrate">
+                                <option value="96000">96 kbps</option>
+                                <option value="128000" selected>128 kbps</option>
+                                <option value="192000">192 kbps</option>
+                            </select>
+                        </div>
+                        <div data-format-settings="midi">
+                            <label>Ticks Per Beat</label>
+                            <select id="melody-midi-ticks">
+                                <option value="240">240</option>
+                                <option value="480" selected>480</option>
+                                <option value="960">960</option>
+                            </select>
+                            <label>Velocity Scale</label>
+                            <input type="range" id="melody-midi-velocity" min="50" max="140" step="5" value="100">
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

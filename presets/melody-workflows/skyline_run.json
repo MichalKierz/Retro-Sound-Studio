@@ -1,0 +1,185 @@
+{
+  "name": "Skyline Run",
+  "description": "Compact three-layer Skyline Run loop built from lead, bass and one supporting pattern.",
+  "tempo": 150,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/lead_07.wav",
+      "soundLabel": "lead_07.wav",
+      "melodyPresetId": "skyline_lead_run",
+      "notes": [
+        {
+          "pitch": 76,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 0.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 83,
+          "start": 0.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 81,
+          "start": 1,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 1.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 2.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/bass_10.wav",
+      "soundLabel": "bass_10.wav",
+      "melodyPresetId": "skyline_bass_drive",
+      "notes": [
+        {
+          "pitch": 40,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 40,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 47,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 40,
+          "start": 1.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 50,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 3.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Arp",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/pluck_05.wav",
+      "soundLabel": "pluck_05.wav",
+      "melodyPresetId": "skyline_arp_glass",
+      "notes": [
+        {
+          "pitch": 64,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 67,
+          "start": 0.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 71,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 66,
+          "start": 2.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 69,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

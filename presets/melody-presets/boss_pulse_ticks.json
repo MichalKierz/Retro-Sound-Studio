@@ -1,0 +1,64 @@
+{
+  "name": "Boss Pulse Ticks",
+  "description": "Nervous repeated pulse ticks.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Pluck",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 58,
+          "start": 0.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 58,
+          "start": 0.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 58,
+          "start": 1.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 58,
+          "start": 1.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 61,
+          "start": 2.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 61,
+          "start": 2.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 61,
+          "start": 3.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 61,
+          "start": 3.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

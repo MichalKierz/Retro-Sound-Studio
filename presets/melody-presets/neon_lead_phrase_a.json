@@ -1,0 +1,64 @@
+{
+  "name": "Neon Lead Phrase A",
+  "description": "Ascending C minor hook.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 72,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 75,
+          "start": 0.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 82,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 80,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 2.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 75,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 72,
+          "start": 3.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

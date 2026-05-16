@@ -1,0 +1,40 @@
+{
+  "name": "Skyline Hat Ticks",
+  "description": "Sixteenth-style hat ticks for skyline run.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Hat",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 42,
+          "start": 0.5,
+          "duration": 0.125,
+          "velocity": 0.45
+        },
+        {
+          "pitch": 42,
+          "start": 1.5,
+          "duration": 0.125,
+          "velocity": 0.45
+        },
+        {
+          "pitch": 42,
+          "start": 2.5,
+          "duration": 0.125,
+          "velocity": 0.45
+        },
+        {
+          "pitch": 42,
+          "start": 3.5,
+          "duration": 0.125,
+          "velocity": 0.45
+        }
+      ]
+    }
+  ]
+}

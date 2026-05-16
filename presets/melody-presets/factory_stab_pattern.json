@@ -1,0 +1,52 @@
+{
+  "name": "Factory Stab Pattern",
+  "description": "Short industrial chord-tone stabs.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Stabs",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 57,
+          "start": 0,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 0.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 65,
+          "start": 1.5,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 57,
+          "start": 2,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 60,
+          "start": 2.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 64,
+          "start": 3.5,
+          "duration": 0.125,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

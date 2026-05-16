@@ -1,0 +1,149 @@
+{
+  "name": "Ocean Drift",
+  "description": "Compact three-layer Ocean Drift loop built from lead, bass and one supporting pattern.",
+  "tempo": 96,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/lead_11.wav",
+      "soundLabel": "lead_11.wav",
+      "melodyPresetId": "ocean_lead_swell",
+      "notes": [
+        {
+          "pitch": 69,
+          "start": 0,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 72,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 1,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 1.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 72,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 71,
+          "start": 2.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 69,
+          "start": 3,
+          "duration": 0.75,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/bass_09.wav",
+      "soundLabel": "bass_09.wav",
+      "melodyPresetId": "ocean_bass_tide",
+      "notes": [
+        {
+          "pitch": 33,
+          "start": 0,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 40,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 36,
+          "start": 2,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 3.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ripples",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/pluck_07.wav",
+      "soundLabel": "pluck_07.wav",
+      "melodyPresetId": "ocean_pluck_ripples",
+      "notes": [
+        {
+          "pitch": 57,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 60,
+          "start": 1,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 64,
+          "start": 1.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 69,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 55,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 59,
+          "start": 3,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 3.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

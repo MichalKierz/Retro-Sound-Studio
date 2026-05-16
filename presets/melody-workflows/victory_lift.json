@@ -1,0 +1,155 @@
+{
+  "name": "Victory Lift",
+  "description": "Compact three-layer Victory Lift loop built from lead, bass and one supporting pattern.",
+  "tempo": 144,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/lead_01.wav",
+      "soundLabel": "lead_01.wav",
+      "melodyPresetId": "victory_lead_fanfare",
+      "notes": [
+        {
+          "pitch": 72,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 84,
+          "start": 1.5,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 83,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 81,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 3.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/bass_05.wav",
+      "soundLabel": "bass_05.wav",
+      "melodyPresetId": "victory_bass_climb",
+      "notes": [
+        {
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 45,
+          "start": 2,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 47,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Arp",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/pluck_01.wav",
+      "soundLabel": "pluck_01.wav",
+      "melodyPresetId": "victory_pluck_chords",
+      "notes": [
+        {
+          "pitch": 60,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 64,
+          "start": 0.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 67,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 72,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 65,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 69,
+          "start": 2.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 72,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 77,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "name": "Factory Shift",
+  "description": "Compact three-layer Factory Shift loop built from lead, bass and one supporting pattern.",
+  "tempo": 118,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/lead_10.wav",
+      "soundLabel": "lead_10.wav",
+      "melodyPresetId": "factory_lead_hook",
+      "notes": [
+        {
+          "pitch": 74,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 77,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 69,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 72,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/bass_07.wav",
+      "soundLabel": "bass_07.wav",
+      "melodyPresetId": "factory_bass_pulse",
+      "notes": [
+        {
+          "pitch": 38,
+          "start": 0,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 38,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 38,
+          "start": 1,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 45,
+          "start": 1.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 2,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 3,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 48,
+          "start": 3.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Stabs",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/pluck_06.wav",
+      "soundLabel": "pluck_06.wav",
+      "melodyPresetId": "factory_stab_pattern",
+      "notes": [
+        {
+          "pitch": 57,
+          "start": 0,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 0.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 65,
+          "start": 1.5,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 57,
+          "start": 2,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 60,
+          "start": 2.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 64,
+          "start": 3.5,
+          "duration": 0.125,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

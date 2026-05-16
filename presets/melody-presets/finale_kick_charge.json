@@ -1,0 +1,40 @@
+{
+  "name": "Finale Kick Charge",
+  "description": "Driving kick layer for final charge.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Kick",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 1
+        },
+        {
+          "pitch": 36,
+          "start": 1,
+          "duration": 0.25,
+          "velocity": 0.75
+        },
+        {
+          "pitch": 36,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 1
+        },
+        {
+          "pitch": 36,
+          "start": 3,
+          "duration": 0.25,
+          "velocity": 0.75
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Skyline Arp Glass",
+  "description": "High glass arpeggio line for skyline motion.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Arp",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 64,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 67,
+          "start": 0.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 71,
+          "start": 0.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 76,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 66,
+          "start": 2.25,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 69,
+          "start": 2.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

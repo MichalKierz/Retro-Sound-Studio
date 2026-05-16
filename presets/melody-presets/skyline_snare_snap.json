@@ -1,0 +1,28 @@
+{
+  "name": "Skyline Snare Snap",
+  "description": "Snappy backbeat layer for skyline run.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Snare",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 38,
+          "start": 1,
+          "duration": 0.25,
+          "velocity": 0.9
+        },
+        {
+          "pitch": 38,
+          "start": 3,
+          "duration": 0.25,
+          "velocity": 0.9
+        }
+      ]
+    }
+  ]
+}

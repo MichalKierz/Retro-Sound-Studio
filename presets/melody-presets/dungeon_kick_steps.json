@@ -1,0 +1,22 @@
+{
+  "name": "Dungeon Kick Steps",
+  "description": "Half-time kick layer for dungeon pulse.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Kick",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 1
+        }
+      ]
+    }
+  ]
+}

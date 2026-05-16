@@ -1,0 +1,155 @@
+{
+  "name": "Dungeon Pulse",
+  "description": "Compact three-layer Dungeon Pulse loop built from lead, bass and one supporting pattern.",
+  "tempo": 104,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/lead_03.wav",
+      "soundLabel": "lead_03.wav",
+      "melodyPresetId": "dungeon_lead_motif",
+      "notes": [
+        {
+          "pitch": 67,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 68,
+          "start": 0.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 65,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 63,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 2,
+          "duration": 0.75,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 63,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 67,
+          "start": 3.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/bass_04.wav",
+      "soundLabel": "bass_04.wav",
+      "melodyPresetId": "dungeon_bass_ostinato",
+      "notes": [
+        {
+          "pitch": 31,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 31,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 34,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 31,
+          "start": 1.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 32,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 32,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 35,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 32,
+          "start": 3.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Stabs",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/pluck_04.wav",
+      "soundLabel": "pluck_04.wav",
+      "melodyPresetId": "dungeon_pluck_stabs",
+      "notes": [
+        {
+          "pitch": 55,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 58,
+          "start": 1.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 60,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 63,
+          "start": 3.5,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

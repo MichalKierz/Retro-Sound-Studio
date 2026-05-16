@@ -1,0 +1,28 @@
+{
+  "name": "Neon Kick Grid",
+  "description": "Four-on-floor kick layer for the neon workflow.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Kick",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 36,
+          "start": 0,
+          "duration": 0.25,
+          "velocity": 1
+        },
+        {
+          "pitch": 36,
+          "start": 2,
+          "duration": 0.25,
+          "velocity": 1
+        }
+      ]
+    }
+  ]
+}

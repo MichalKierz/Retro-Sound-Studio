@@ -1,0 +1,185 @@
+{
+  "name": "Finale Charge",
+  "description": "Compact three-layer Finale Charge loop built from lead, bass and one supporting pattern.",
+  "tempo": 138,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Lead",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/lead_12.wav",
+      "soundLabel": "lead_12.wav",
+      "melodyPresetId": "finale_lead_charge",
+      "notes": [
+        {
+          "pitch": 67,
+          "start": 0,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 70,
+          "start": 0.5,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 77,
+          "start": 1.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 79,
+          "start": 2,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 77,
+          "start": 2.5,
+          "duration": 0.375,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 74,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 70,
+          "start": 3.5,
+          "duration": 0.5,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Bass",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/bass_06.wav",
+      "soundLabel": "bass_06.wav",
+      "melodyPresetId": "finale_bass_charge",
+      "notes": [
+        {
+          "pitch": 31,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 38,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 38,
+          "start": 1.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 34,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 46,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 3.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Ticks",
+      "muted": false,
+      "volume": 0.85,
+      "soundFilePath": "rendered-sounds/pluck_08.wav",
+      "soundLabel": "pluck_08.wav",
+      "melodyPresetId": "finale_tick_ostinato",
+      "notes": [
+        {
+          "pitch": 55,
+          "start": 0.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 58,
+          "start": 0.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 1.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 67,
+          "start": 1.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 53,
+          "start": 2.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 58,
+          "start": 2.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 62,
+          "start": 3.25,
+          "duration": 0.125,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 65,
+          "start": 3.75,
+          "duration": 0.125,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

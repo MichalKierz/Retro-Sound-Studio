@@ -1,0 +1,64 @@
+{
+  "name": "Finale Bass Charge",
+  "description": "G minor bass charge with strong cadence.",
+  "tempo": 120,
+  "sample_rate": 44100,
+  "layers": [
+    {
+      "id": 1,
+      "name": "Bass",
+      "muted": false,
+      "volume": 1,
+      "notes": [
+        {
+          "pitch": 31,
+          "start": 0,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 38,
+          "start": 0.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 43,
+          "start": 1,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 38,
+          "start": 1.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 34,
+          "start": 2,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 2.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 46,
+          "start": 3,
+          "duration": 0.5,
+          "velocity": 0.85
+        },
+        {
+          "pitch": 41,
+          "start": 3.75,
+          "duration": 0.25,
+          "velocity": 0.85
+        }
+      ]
+    }
+  ]
+}

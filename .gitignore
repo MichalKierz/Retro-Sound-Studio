@@ -1,0 +1,44 @@
+# Rust / Cargo
+/src-tauri/target/
+
+# Release artifacts
+/release/
+/dist/
+*.zip
+*.7z
+*.msi
+*.msix
+*.appx
+*.exe.sig
+
+# Runtime exports created by users
+/exports/sounds/*
+!/exports/sounds/.gitkeep
+/exports/melodies/*
+!/exports/melodies/.gitkeep
+/state/
+/webview-data/
+
+# Local secrets / environment overrides
+.env
+.env.*
+TODO.md
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
