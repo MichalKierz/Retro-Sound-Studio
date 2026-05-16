@@ -12,6 +12,9 @@
 *.exe.sig
 
 # Runtime exports created by users
+/exports/
+/presets/
+/tools/
 /exports/sounds/*
 !/exports/sounds/.gitkeep
 /exports/melodies/*
